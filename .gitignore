@@ -1,0 +1,57 @@
+# Bytecode
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Logs
+*.log
+logs/
+*.out
+*.err
+*.log
+*.html
+!report/generator.py
+
+# Python environment
+env/
+venv/
+ENV/
+.venv/
+.Python
+pip-log.txt
+.env
+dist/
+build/
+*.egg-info/
+
+# macOS system files
+.DS_Store
+
+# VSCode project files
+.vscode/
+
+# Temporary files
+*.swp
+*~
+*.tmp
+
+# Docker artifacts
+*.tar
+*.img
+*.container
+
+# Coverage / testing
+.coverage
+.tox/
+.cache/
+.pytest_cache/
+/backup/
+
+# Output from tools (if saved)
+*.json
+*.xml
+
+# Project-specific
+tools/
+nuclei/
+ffuf/
