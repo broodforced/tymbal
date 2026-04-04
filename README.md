@@ -89,8 +89,8 @@ tymbal_example_20260402_120000.json
 ```
 Contains subdomains, live assets, open ports, and findings. Readable by Cicada's `--tymbal` flag or `cicada ingest` command.
 
-<p align="center"><img src="./assets/tymbal-output1.jpg" alt="Tymbal Output 1" width="300" />
-<img src="./assets/tymbal-output2.jpg" alt="Tymbal Output 2" width="300" /></p>
+<p align="center"><img src="./assets/tymbal-output1.jpg" alt="Tymbal Output 1" width="500" height="300"/><br></p>
+<p align="center"><img src="./assets/tymbal-output2.jpg" alt="Tymbal Output 2" width="500" height="150"/></p>
 
 
 ## On Something Like an Alpine Setup
