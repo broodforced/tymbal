@@ -12,8 +12,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/zblauser/tymbal/pkg/config"
-	"github.com/zblauser/tymbal/pkg/output"
+	"github.com/broodforced/tymbal/pkg/config"
+	"github.com/broodforced/tymbal/pkg/output"
 )
 
 var miniWordlist = []string{

@@ -1,6 +1,6 @@
 # Tymbal
 
-Lightweight recon for [Cicada](https://github.com/zblauser/cicada). Runs on anything with a shell.<br>
+Lightweight recon for [Cicada](https://github.com/broodforced/cicada). Runs on anything with a shell.<br>
 
 Tymbal is a POSIX shell script that does subdomain enumeration, HTTP probing, port scanning, and basic security checks. It then outputs Cicada-compatible JSON.
 

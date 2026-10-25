@@ -11,10 +11,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/zblauser/tymbal/pkg/config"
-	"github.com/zblauser/tymbal/pkg/output"
-	"github.com/zblauser/tymbal/pkg/probe"
-	"github.com/zblauser/tymbal/pkg/recon"
+	"github.com/broodforced/tymbal/pkg/config"
+	"github.com/broodforced/tymbal/pkg/output"
+	"github.com/broodforced/tymbal/pkg/probe"
+	"github.com/broodforced/tymbal/pkg/recon"
 )
 
 const version = "0.1.0"
@@ -49,7 +49,7 @@ func main() {
 
 	args := flag.Args()
 	if len(args) < 1 {
-		fmt.Println(banner)
+		fmt.Print(banner)
 		fmt.Printf("  tymbal v%s — lightweight recon for cicada\n\n", version)
 		fmt.Println("  usage: tymbal [options] <target>")
 		fmt.Println()
@@ -74,7 +74,7 @@ func main() {
 
 	target = args[0]
 
-	fmt.Println(banner)
+	fmt.Print(banner)
 	fmt.Printf("  target: %s\n", target)
 	fmt.Printf("  mode:   %s\n", mode)
 	fmt.Printf("  arch:   %s/%s\n\n", runtime.GOOS, runtime.GOARCH)
