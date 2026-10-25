@@ -3,13 +3,13 @@
 package recon
 
 import (
-	"fmt"
 	"net"
+	"strconv"
 	"sync"
 	"time"
 
-	"github.com/zblauser/tymbal/pkg/config"
-	"github.com/zblauser/tymbal/pkg/output"
+	"github.com/broodforced/tymbal/pkg/config"
+	"github.com/broodforced/tymbal/pkg/output"
 )
 
 var commonPorts = []int{
@@ -40,7 +40,7 @@ func ScanPorts(cfg *config.Config, result *output.ScanResult) {
 			go func(p int) {
 				defer wg.Done()
 				defer func() { <-sem }()
-				addr := fmt.Sprintf("%s:%d", ip, p)
+				addr := net.JoinHostPort(ip, strconv.Itoa(p))
 				conn, err := net.DialTimeout("tcp", addr, 2*time.Second)
 				if err == nil {
 					conn.Close()

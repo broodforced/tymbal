@@ -1,57 +1,20 @@
-# Bytecode
-__pycache__/
-*.py[cod]
-*.pyo
+# Build output
+/tympal
+/tympal.exe
+/dist/
+/build/
 
-# Logs
-*.log
-logs/
+# Scan output (feed to cicada, don't commit)
+*.json
+
+# Go
+*.test
 *.out
-*.err
-*.log
-*.html
-!report/generator.py
-
-# Python environment
-env/
-venv/
-ENV/
-.venv/
-.Python
-pip-log.txt
-.env
-dist/
-build/
-*.egg-info/
 
 # macOS system files
 .DS_Store
 
-# VSCode project files
-.vscode/
-
-# Temporary files
+# Editor / temp
 *.swp
 *~
 *.tmp
-
-# Docker artifacts
-*.tar
-*.img
-*.container
-
-# Coverage / testing
-.coverage
-.tox/
-.cache/
-.pytest_cache/
-/backup/
-
-# Output from tools (if saved)
-*.json
-*.xml
-
-# Project-specific
-tools/
-nuclei/
-ffuf/
